@@ -6,7 +6,7 @@ MAINTAINER Nathaniel Hoag, info@nathanielhoag.com
 ADD vimrc /root/.vimrc
 
 RUN apt-get update && \
-  apt-get install -y curl the_silver_searcher vim && \
+  apt-get install -y curl silversearcher-ag vim && \
   rm -rf /var/lib/apt/lists/* && \
   mkdir -p ~/.vim/autoload ~/.vim/bundle && \
   curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim && \
